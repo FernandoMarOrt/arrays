@@ -8,20 +8,13 @@ package arrays_ejercicios;
  *
  * @author fer
  */
-public class ejercicio1 {
+public class ejercicio2 {
     
     public static void main(String[] args) {
         
-         int [] numeros = {1,2,3,4,5,6};
-         int total = 0;
-         
-        for (int i = 0; i<numeros.length; i++){
-            
-            total += numeros[i];
-            
-            System.out.println(total);
-            
-        }
+        System.out.println("Dime el numero de personas a las que voy a coger la altura");
+        
+        int[] num = new int[10];
         
     }
     
