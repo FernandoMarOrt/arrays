@@ -15,7 +15,7 @@ public class ejercicio5 {
     public static void main(String[] args) {
 
         int[] numeros = new int[10];
-        
+
         leerValores(numeros);
         contarPositivos(numeros);
         contarPositivos(numeros);
@@ -26,7 +26,7 @@ public class ejercicio5 {
         calcularPositivos(numeros);
         System.out.println("Numeros de positivos " + contarPositivos(numeros));
         System.out.println("Numeros de negativos " + contarNegativos(numeros));
-        System.out.println("Numeros de ceros " + contarCeros(numeros) );
+        System.out.println("Numeros de ceros " + contarCeros(numeros));
 
     }
 
@@ -109,7 +109,7 @@ public class ejercicio5 {
 
     }
 
-    ///Imprimir array
+    //calcular la media de positivos
     public static void calcularPositivos(int[] aux) {
 
         int totalPositivos = 0;
@@ -126,15 +126,14 @@ public class ejercicio5 {
         }
 
         mediaPositivos = totalPositivos / contarPositivos(aux);
-        
+
         System.out.println("La media de los numeros positivos es " + mediaPositivos);
 
     }
-    
-    ///Imprimir array
+    //calcular la media de negativos
     public static void calcularNegativos(int[] aux) {
 
-        int totalNegativos= 0;
+        int totalNegativos = 0;
         double mediaNegativos = 0;
 
         for (int i = 0; i < aux.length; i++) {
@@ -151,6 +150,5 @@ public class ejercicio5 {
         System.out.println("La media de los numeros negativos es " + mediaNegativos);
 
     }
-    
-    
+
 }
