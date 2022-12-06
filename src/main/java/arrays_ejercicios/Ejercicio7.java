@@ -17,6 +17,7 @@ public class Ejercicio7 {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
+        
         Random numeroAleatorio = new Random();
 
         System.out.println("Dime el tamaño de los 2 arrays");
@@ -28,11 +29,27 @@ public class Ejercicio7 {
         
         int nAleatorio = numeroAleatorio.nextInt(0, 100 + 1);
         
+         for (int i = 0; i < tamaño; i++) {
+            numeros[i] = numeroAleatorio.nextInt(0, 100 + 1);
+            numeros2[i] = numeroAleatorio.nextInt(0, 100 + 1);
+        }
+        
+        
+        System.out.print("Array 1:     ");
+        
+        imprimir(numeros);
+        
+         System.out.print("Array 2:     ");
+         
+        imprimir(numeros2);
+        
+        System.out.print("Resultado : ");
+        
         int[] multiplicar = multiplicar(numeros, numeros2);
         
         for (int i = 0; i < multiplicar.length; i++) {
             
-            System.out.println(multiplicar[i]);
+            System.out.print(multiplicar[i] + "|");
         }
 
         
@@ -50,6 +67,19 @@ public class Ejercicio7 {
         
         
         return multiplicado;
+    }
+    
+    
+    //muestro los arrays
+    public static void imprimir(int[] aux) {
+        
+        
+        for (int i = 0; i < aux.length; i++) {
+            
+            System.out.print(aux[i] + "|");
+        }
+
+        System.out.println("");
     }
 
 }

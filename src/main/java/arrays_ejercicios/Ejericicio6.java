@@ -50,14 +50,16 @@ public class Ejericicio6 {
         if (aux.length == aux2.length) {
 
             for (int i = 0; i < aux.length; i++) {
-                for (int j = 0; j < aux2.length; j++) {
-                    if (aux[i] == aux2[j]) {
 
-                        iguales2 = true;
+                if (aux[i] != aux2[i]) {
 
-                    }
+                    iguales2 = false;
+
+                } else {
+                    iguales2 = true;
                 }
             }
+
         }
 
         return iguales2;
