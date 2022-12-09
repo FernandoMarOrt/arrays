@@ -49,8 +49,11 @@ public class ejercicio1 {
         return numero;
     }
 
+    
     //Asigno cada fragmento de numero a una posicion del array
     public static char[] arrayPartido(String numCadena) {
+        
+        //numCadena.toCharArray(); forma facil de hacer esto
 
         int tamaño = numCadena.length();
 
@@ -64,6 +67,8 @@ public class ejercicio1 {
         return numeros;
     }
 
+    
+    
     public static boolean sonCapicuos(char[] capicuos) {
 
         boolean sonCapicuos = false;
@@ -78,6 +83,7 @@ public class ejercicio1 {
 
                 sonCapicuos = false;
                 break;
+                
             } else {
 
                 sonCapicuos = true;

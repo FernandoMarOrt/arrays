@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class ejercicio2 {
 
     //rellenar array char desde A hasta Z 
-    //generar un tamaño aleatorio entre 15 y 25
     //generar un array de ese tamaño y rellenar de posiciones validas aleatorios
     //cogiendo las posiciones del primer array generar otro y despues pasarlo
     // a string el resultado en plan 1 2 3 4 pues el resultado: EBGH
@@ -28,13 +27,10 @@ public class ejercicio2 {
         
         
         
-        
-        
-        
     }
     
     
-      //Leo el numero por teclado
+     //Leo el numero por teclado
     public static int leerTeclado() {
 
         Scanner teclado = new Scanner(System.in);
@@ -47,7 +43,10 @@ public class ejercicio2 {
     }
     
     
+    //Relleno el array desde la A hasta la Z
     public static char[] arrayAZ(int tamaño){
+        
+        
         
         int contador = 65;
         
