@@ -17,13 +17,16 @@ public class Ejercicio8 {
         Scanner teclado = new Scanner(System.in);
 
         int tamanio;
+        int tamanio2;
 
+        //Pregunto por el numero entero que sera el tamaño del array
         System.out.println("Dime un numero entero");
 
         tamanio = teclado.nextInt();
 
         int[] numeros = new int[tamanio];
 
+        //Bucle para rellenar el array de los numeros que quiere el usuario
         for (int i = 0; i < tamanio; i++) {
 
             System.out.println("Dime un numero para la posicion" + (i + 1));
@@ -33,15 +36,18 @@ public class Ejercicio8 {
         }
         
         
-        for (int j = 0; j <= tamanio; j++) {
+        //Imprimo los asteriscos
+        
+        for (int i = 0; i < numeros.length; i++) {
 
-            System.out.println("");
             
-            for (int i = 0; i < numeros[i]; i++) {
+            for (int j = 0; j < numeros[i]; j++) {
 
                 System.out.print("*");
 
             }
+            
+            System.out.println("");
 
         }
 
