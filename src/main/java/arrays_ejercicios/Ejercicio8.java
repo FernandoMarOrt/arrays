@@ -17,7 +17,6 @@ public class Ejercicio8 {
         Scanner teclado = new Scanner(System.in);
 
         int tamanio;
-        int tamanio2;
 
         //Pregunto por el numero entero que sera el tamaño del array
         System.out.println("Dime un numero entero");
